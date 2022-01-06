@@ -27,10 +27,10 @@ function kiujdgrsghsss(){
     const wspGreen = '#03D79C';
     const telegramBlue = '#2AA2C6';
     //Platform Buttons
-    const feedbackMainButton = '<svg id="buttonFeedbackBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><circle id="feedbackIconShape" cx="25" cy="25" r="25"/><circle class="feedbackIconButton" cx="16" cy="19" r="1.9"/><circle class="feedbackIconButton" cx="34" cy="19" r="1.9"/><path class="feedbackIconButton" d="M31.9,26.8H18.1c-0.2,0-0.4,0.1-0.5,0.3c-0.1,0.2-0.2,0.4-0.1,0.6c0,0.1,1.3,5.3,7.6,5.3c6.5,0,7.6-5.2,7.6-5.3c0-0.2,0-0.4-0.1-0.6C32.3,26.9,32.1,26.8,31.9,26.8z"/></svg>'
-    const messengerMainButton = '<svg id="buttonMessengerBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="messengerIconShape" d="M24.6,0.4C11.4,0.4,0.6,11.3,0.8,24.5c0.1,6.7,2.9,12.7,7.4,17c0.5,0.5,0.8,1.2,0.8,1.9v4c0,1.5,1.6,2.6,3,1.9l4.4-2c0.6-0.3,1.2-0.3,1.8-0.1c2,0.6,4.2,0.9,6.4,0.9c13.1,0,23.9-10.7,23.9-23.8C48.4,11.1,37.7,0.4,24.6,0.4z"/><path id="messengerIconButton" d="M39.4,18.6l-7.1,11.2c-1.2,1.8-3.6,2.3-5.4,1.1l-2-1.4L21.4,27c-0.7-0.5-1.6-0.4-2.2,0.1l-7.1,5.8c-1.2,0.9-2.7-0.5-1.9-1.7l7.1-11.2c1.2-1.8,3.6-2.3,5.4-1.1l2.9,2.1l2.6,1.9c0.7,0.5,1.6,0.4,2.2-0.1l7.1-5.8C38.6,16,40.2,17.4,39.4,18.6z"/></svg>';
-    const wspMainButton = '<svg id="buttonWhatsappBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="whatsappIconShape" d="M25.3,0.7C12.2,0.7,1.5,11.4,1.5,24.5c0,4.5,1.3,8.9,3.6,12.6L5.7,38l-2.4,8.8l9-2.4l0.9,0.5c3.6,2.2,7.8,3.3,12.1,3.3h0c13.1,0,24-10.7,24-23.8c0-6.4-2.7-12.3-7.2-16.8C37.6,3.2,31.7,0.7,25.3,0.7L25.3,0.7z"/><path  id="whatsappIconButton" d="M39.3,34.7c-0.6,1.7-3.4,3.2-4.8,3.4c-2.3,0.3-4,0.2-8.6-1.8C18.7,33.2,14,26,13.7,25.5s-2.9-3.9-2.9-7.4s1.8-5.2,2.5-6c0.6-0.7,1.4-0.9,1.9-0.9c0.5,0,1,0,1.4,0c0.4,0,1-0.2,1.6,1.2c0.6,1.4,2,4.9,2.2,5.3c0.2,0.4,0.3,0.8,0.1,1.2c-1.4,2.7-2.8,2.6-2.1,3.9c2.8,4.7,5.5,6.4,9.7,8.5c0.7,0.4,1.1,0.3,1.5-0.2c0.4-0.5,1.8-2.1,2.3-2.8c0.5-0.7,1-0.6,1.6-0.4c0.6,0.2,4.2,2,4.9,2.3c0.7,0.4,1.2,0.5,1.4,0.8C39.9,31.6,39.9,33,39.3,34.7z"/></svg>';
-    const telegramMainButton = '<svg id="buttonTelegramBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><circle id="telegramIconShape" cx="25" cy="25" r="25"/><path  id="telegramIconButton" d="M10.4,24.8l16.8-6.9c1.7-0.7,7.3-3,7.3-3s2.6-1,2.4,1.4c-0.1,1-0.7,4.6-1.2,8.4L33.9,36c0,0-0.1,1.7-1.4,2 c-1.2,0.3-3.3-1-3.6-1.3c-0.3-0.2-5.4-3.5-7.3-5.1c-0.5-0.4-1.1-1.3,0.1-2.3c2.6-2.4,5.7-5.3,7.6-7.2c0.9-0.9,1.7-2.9-1.9-0.4 l-10.2,6.9c0,0-1.2,0.7-3.3,0.1C11.7,27.9,9.2,27,9.2,27S7.4,25.9,10.4,24.8L10.4,24.8z"/></svg>';
+    const feedbackMainButton = '<svg id="buttonFeedbackBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" y="0" width="50" height="50"/><path id="feedbackIconShape" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25c13.8,0,25-11.2,25-25S38.8,0,25,0z M16,20.9c-1,0-1.9-0.9-1.9-1.9 s0.9-1.9,1.9-1.9c1,0,1.9,0.9,1.9,1.9S17,20.9,16,20.9z M25.1,33c-6.3,0-7.6-5.2-7.6-5.3c-0.1-0.2,0-0.4,0.1-0.6 c0.1-0.2,0.3-0.3,0.5-0.3h13.8c0.2,0,0.4,0.1,0.7,0.3c0.1,0.2,0.1,0.4,0.1,0.6C32.7,27.8,31.6,33,25.1,33z M34,20.9	c-1,0-1.9-0.9-1.9-1.9s0.9-1.9,1.9-1.9c1,0,1.9,0.9,1.9,1.9S35,20.9,34,20.9z"/></svg>'
+    const messengerMainButton = '<svg id="buttonMessengerBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" y="0" width="50" height="50"/><path id="messengerIconShape" d="M25,0C11.5,0,0.5,11.1,0.7,24.5c0.1,6.8,3,12.9,7.5,17.3c0.5,0.5,0.8,1.2,0.8,1.9v4.1c0,1.5,1.6,2.6,3.1,1.9 l4.5-2c0.6-0.3,1.2-0.3,1.8-0.1c2,0.6,4.3,0.9,6.5,0.9c13.3,0,24.3-10.9,24.3-24.2C49.2,10.9,38.3,0,25,0z M40,18.5l-7.2,11.4	c-1.2,1.8-3.7,2.3-5.5,1.1l-2-1.4l-3.6-2.5c-0.7-0.5-1.6-0.4-2.2,0.1l-7.2,5.9c-1.2,0.9-2.7-0.5-1.9-1.7L17.5,20c1.2-1.8,3.7-2.3,5.5-1.1l3,2.1l2.6,1.9c0.7,0.5,1.6,0.4,2.2-0.1l7.2-5.9C39.2,15.9,40.8,17.3,40,18.5z"/></svg>';
+    const wspMainButton = '<svg id="buttonWhatsappBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="whatsappIconShape" d="M42.5,7.4c-4.7-4.6-10.9-7.2-17.6-7.2C11.2,0.2,0,11.3,0,25.1c0,4.7,1.4,9.3,3.8,13.2l0.6,0.9l-2.5,9.2l9.4-2.5	l0.9,0.5c3.8,2.3,8.2,3.5,12.7,3.5C38.6,49.8,50,38.7,50,24.9C50,18.3,47.2,12.1,42.5,7.4z M39.5,35.7c-0.6,1.8-3.6,3.3-5,3.6	c-2.4,0.3-4.2,0.2-9-1.9C18,34.2,13.1,26.6,12.8,26.1c-0.3-0.5-3-4.1-3-7.7s1.9-5.4,2.6-6.3c0.6-0.7,1.5-0.9,2-0.9s1,0,1.5,0 c0.4,0,1-0.2,1.7,1.3c0.6,1.5,2.1,5.1,2.3,5.5c0.2,0.4,0.3,0.8,0.1,1.3c-1.5,2.8-2.9,2.7-2.2,4.1c2.9,4.9,5.8,6.7,10.1,8.9 c0.7,0.4,1.2,0.3,1.6-0.2c0.4-0.5,1.9-2.2,2.4-2.9c0.5-0.7,1-0.6,1.7-0.4c0.6,0.2,4.4,2.1,5.1,2.4c0.7,0.4,1.3,0.5,1.5,0.8 C40.2,32.5,40.2,33.9,39.5,35.7z"/></svg>';
+    const telegramMainButton = '<svg id="buttonTelegramBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="telegramIconShape" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M36.9,16.3c-0.1,1-0.7,4.6-1.2,8.4L33.9,36	c0,0-0.1,1.7-1.4,2c-1.2,0.3-3.3-1-3.6-1.3c-0.3-0.2-5.4-3.5-7.3-5.1c-0.5-0.4-1.1-1.3,0.1-2.3c2.6-2.4,5.7-5.3,7.6-7.2	c0.9-0.9,1.7-2.9-1.9-0.4l-10.2,6.9c0,0-1.2,0.7-3.3,0.1C11.7,27.9,9.2,27,9.2,27s-1.8-1.1,1.2-2.2l16.8-6.9c1.7-0.7,7.3-3,7.3-3 S37.1,13.9,36.9,16.3z"/></svg>';
     const wspSendButtonIcon = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="40" height="40"/><polygon id="wspSendButtonSVG" points="21.6,15.3 12.3,11 12.3,17.9 21.8,19.6 12.3,21.4 12.3,28.3 21.6,24 31,19.6 	"/></svg>'
     const messengerSendButtonIcon = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="29px" height="29.8px" viewBox="0 0 29 29.8" style="overflow:visible;enable-background:new 0 0 29 29.8;" xml:space="preserve"><path id="messengerIconFull" d="M14.5,0C6.4,0-0.1,6.6,0,14.6c0,4.1,1.8,7.7,4.5,10.3C4.8,25.3,5,25.7,5,26.1v2.4c0,0.9,1,1.6,1.8,1.2l2.7-1.2c0.4-0.2,0.7-0.2,1.1-0.1c1.2,0.3,2.6,0.5,3.9,0.5c8,0,14.5-6.5,14.5-14.5C29,6.5,22.5,0,14.5,0z M23.5,11.1l-4.3,6.8c-0.7,1.1-2.2,1.4-3.3,0.6l-1.2-0.9l-2.1-1.5c-0.4-0.3-0.9-0.3-1.3,0l-4.3,3.5c-0.7,0.6-1.7-0.3-1.2-1l4.3-6.8c0.7-1.1,2.2-1.4,3.3-0.6l1.8,1.3l1.6,1.1c0.4,0.3,0.9,0.3,1.3,0l4.3-3.5C23,9.5,24,10.3,23.5,11.1z"/></svg>'
     const telegramSendButtonIcon = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="40" height="40"/><path id="telegramSendButtonSVG" d="M27.5,19.2l-13.5-6.9c-0.6-0.3-1.4,0.2-1.3,0.9l0.7,5c0.1,0.4,0.4,0.7,0.7,0.7l7.7,0.8c0.2,0,0.2,0.4,0,0.4L14.2,21c-0.4,0-0.7,0.3-0.7,0.7l-0.7,5c-0.1,0.7,0.6,1.2,1.3,0.9l13.5-6.9C28.2,20.5,28.2,19.5,27.5,19.2z"/></svg>'
@@ -179,13 +179,6 @@ function kiujdgrsghsss(){
         -moz-transition: .3s!important;\
         -o-transition: .3s!important;\
         fill:'+ byTheme(nebulaGrey,realGrey)+';\
-    }\
-    .feedbackIconButton{\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        fill:'+ byTheme(realWhite,charmingGrey)+';\
     }\
     #fatherBrick {\
         display: none;\
@@ -1473,13 +1466,6 @@ function kiujdgrsghsss(){
         -o-transition: .3s!important;\
         fill:'+ byTheme(nebulaGrey,realGrey)+';\
     }\
-    #whatsappIconButton{\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        fill:'+ byTheme(realWhite,charmingGrey)+';\
-    }\
     #whatsappArea {\
         display: none;\
         opacity: 1;\
@@ -1570,13 +1556,6 @@ function kiujdgrsghsss(){
         -o-transition: .3s!important;\
         fill:'+ byTheme(nebulaGrey,realGrey)+';\
     }\
-    #telegramIconButton{\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        fill:'+ byTheme(realWhite,charmingGrey)+';\
-    }\
     #telegramArea {\
         display: none;\
         opacity: 1;\
@@ -1665,13 +1644,6 @@ function kiujdgrsghsss(){
         -moz-transition: .3s!important;\
         -o-transition: .3s!important;\
         fill:'+ byTheme(nebulaGrey,realGrey)+';\
-    }\
-    #messengerIconButton{\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        fill:'+ byTheme(realWhite,charmingGrey)+';\
     }\
     #messengerArea{\
         transition: .3s!important;\
@@ -2172,21 +2144,18 @@ function kiujdgrsghsss(){
         const messengerArea = document.getElementById("messengerArea");
         const messengerSendButtonBrick = document.getElementById("messengerSendButtonBrick");
         const messengerIconShape = document.getElementById("messengerIconShape");
-        const messengerIconButton = document.getElementById("messengerIconButton");
 
         //Wsp components
         const whatsappArea = document.getElementById("whatsappArea");
         const textAreaWsp = document.getElementById("textAreaWsp");
         const wspSendButtonBrick = document.getElementById("wspSendButtonBrick");
         const whatsappIconShape = document.getElementById("whatsappIconShape");
-        const whatsappIconButton = document.getElementById("whatsappIconButton");
 
         //Telegram components
         const telegramArea = document.getElementById("telegramArea");
         const textAreaTelegram = document.getElementById("textAreaTelegram");
         const telegramSendButtonBrick = document.getElementById("telegramSendButtonBrick");
         const telegramIconShape = document.getElementById("telegramIconShape");
-        const telegramIconButton = document.getElementById("telegramIconButton");
 
         //Shared platforms components
         const platformBoxBrick = document.getElementById("platformBoxBrick")
@@ -2271,10 +2240,9 @@ function kiujdgrsghsss(){
         }
 
         //Apagar boton
-        function offButtonBrick(o,i){
+        function offButtonBrick(o){
             setTimeout(function(){
                 o.style.fill = byTheme(nebulaGrey,realGrey);
-                i.style.fill = byTheme(realWhite,charmingGrey);
             },300);
         }
 
@@ -2332,7 +2300,6 @@ function kiujdgrsghsss(){
             setTimeout(function(){
                 //Change color to button selected
                 messengerIconShape.style.fill = messengerBlue;
-                messengerIconButton.style.fill = realWhite;
                 //Show messenger parts
                 platformBoxBrick.style.height = "190px";
                 platformBoxBrick.style.bottom = "0";
@@ -2347,7 +2314,7 @@ function kiujdgrsghsss(){
                     //Hide elements
                     hmm(messengerArea)
                     //off button
-                    offButtonBrick(messengerIconShape, messengerIconButton)
+                    offButtonBrick(messengerIconShape)
             }
         }
 
@@ -2361,7 +2328,6 @@ function kiujdgrsghsss(){
             setTimeout(function(){
                 //Change color to button selected
                 whatsappIconShape.style.fill = wspGreen;
-                whatsappIconButton.style.fill = realWhite;
                 //Restyle shared components
                 platformBoxBrick.style.height = "120px";
                 platformBoxBrick.style.bottom = "70px";
@@ -2376,7 +2342,7 @@ function kiujdgrsghsss(){
                     //Hide elements
                     hmm(whatsappArea)
                     //off button
-                    offButtonBrick(whatsappIconShape, whatsappIconButton)
+                    offButtonBrick(whatsappIconShape)
             }
         }
 
@@ -2390,7 +2356,6 @@ function kiujdgrsghsss(){
             setTimeout(function(){
                 //Change color to button selected
                 telegramIconShape.style.fill = telegramBlue;
-                telegramIconButton.style.fill = realWhite;
                 //Restyle shared components
                 platformBoxBrick.style.height = "120px";
                 platformBoxBrick.style.bottom = "70px";
@@ -2405,7 +2370,7 @@ function kiujdgrsghsss(){
                     //Hide elements
                     hmm(telegramArea)
                     //off button
-                    offButtonBrick(telegramIconShape, telegramIconButton)
+                    offButtonBrick(telegramIconShape)
             }
         }
 
@@ -2517,9 +2482,9 @@ function kiujdgrsghsss(){
                 //Show complements brick
                 smm(buttonsComplementsBrick)
                 //off buttons
-                if(tellerUseMessenger){offButtonBrick(messengerIconShape, messengerIconButton)};
-                if(tellerUseWsp){offButtonBrick(whatsappIconShape, whatsappIconButton)};
-                if(tellerUseTelegram){offButtonBrick(telegramIconShape, telegramIconButton)};
+                if(tellerUseMessenger){offButtonBrick(messengerIconShape)};
+                if(tellerUseWsp){offButtonBrick(whatsappIconShape)};
+                if(tellerUseTelegram){offButtonBrick(telegramIconShape)};
                 if(tellerUseFeedback){feedbackIconShape.style.fill = byTheme(nebulaGrey,realGrey)};
                 //Main Button animation
                 palomita.style.opacity = "0";
