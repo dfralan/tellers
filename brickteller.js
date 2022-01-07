@@ -24,10 +24,11 @@ function kiujdgrsghsss(){
     const realGrey = '#808080';
     const charmingGrey = '#2A2F32';
     const messengerBlue = '#0384FF';
-    const wspGreen = '#03D79C';
+    const wspGreen = '#39E05C';    
+    const tellerGreen = '#03D79C';
     const telegramBlue = '#2AA2C6';
     //Platform Buttons
-    const feedbackMainButton = '<svg id="buttonFeedbackBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" y="0" width="50" height="50"/><path id="feedbackIconShape" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25c13.8,0,25-11.2,25-25S38.8,0,25,0z M16,20.9c-1,0-1.9-0.9-1.9-1.9 s0.9-1.9,1.9-1.9c1,0,1.9,0.9,1.9,1.9S17,20.9,16,20.9z M25.1,33c-6.3,0-7.6-5.2-7.6-5.3c-0.1-0.2,0-0.4,0.1-0.6 c0.1-0.2,0.3-0.3,0.5-0.3h13.8c0.2,0,0.4,0.1,0.7,0.3c0.1,0.2,0.1,0.4,0.1,0.6C32.7,27.8,31.6,33,25.1,33z M34,20.9	c-1,0-1.9-0.9-1.9-1.9s0.9-1.9,1.9-1.9c1,0,1.9,0.9,1.9,1.9S35,20.9,34,20.9z"/></svg>'
+    const feedbackMainButton = '<svg id="buttonFeedbackBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="feedbackIconShape" d="M25,0C11.2,0,0,11.2,0,25c0,13.8,11.2,25,25,25s25-11.2,25-25C50,11.2,38.8,0,25,0z M35.8,30 c-4.1,0-7.5-3.3-7.6-7.4c-2-0.5-4.5-0.5-6.4,0c-0.1,4.1-3.4,7.4-7.6,7.4c-4.2,0-7.6-3.4-7.6-7.6c0-4.2,3.4-7.6,7.6-7.6 c3.2,0,5.9,2,7,4.8c2.4-0.6,5.1-0.6,7.5,0c1.1-2.8,3.8-4.8,7-4.8c4.2,0,7.6,3.4,7.6,7.6C43.3,26.6,39.9,30,35.8,30z"/></svg>'
     const messengerMainButton = '<svg id="buttonMessengerBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" y="0" width="50" height="50"/><path id="messengerIconShape" d="M25,0C11.5,0,0.5,11.1,0.7,24.5c0.1,6.8,3,12.9,7.5,17.3c0.5,0.5,0.8,1.2,0.8,1.9v4.1c0,1.5,1.6,2.6,3.1,1.9 l4.5-2c0.6-0.3,1.2-0.3,1.8-0.1c2,0.6,4.3,0.9,6.5,0.9c13.3,0,24.3-10.9,24.3-24.2C49.2,10.9,38.3,0,25,0z M40,18.5l-7.2,11.4	c-1.2,1.8-3.7,2.3-5.5,1.1l-2-1.4l-3.6-2.5c-0.7-0.5-1.6-0.4-2.2,0.1l-7.2,5.9c-1.2,0.9-2.7-0.5-1.9-1.7L17.5,20c1.2-1.8,3.7-2.3,5.5-1.1l3,2.1l2.6,1.9c0.7,0.5,1.6,0.4,2.2-0.1l7.2-5.9C39.2,15.9,40.8,17.3,40,18.5z"/></svg>';
     const wspMainButton = '<svg id="buttonWhatsappBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="whatsappIconShape" d="M42.5,7.4c-4.7-4.6-10.9-7.2-17.6-7.2C11.2,0.2,0,11.3,0,25.1c0,4.7,1.4,9.3,3.8,13.2l0.6,0.9l-2.5,9.2l9.4-2.5	l0.9,0.5c3.8,2.3,8.2,3.5,12.7,3.5C38.6,49.8,50,38.7,50,24.9C50,18.3,47.2,12.1,42.5,7.4z M39.5,35.7c-0.6,1.8-3.6,3.3-5,3.6	c-2.4,0.3-4.2,0.2-9-1.9C18,34.2,13.1,26.6,12.8,26.1c-0.3-0.5-3-4.1-3-7.7s1.9-5.4,2.6-6.3c0.6-0.7,1.5-0.9,2-0.9s1,0,1.5,0 c0.4,0,1-0.2,1.7,1.3c0.6,1.5,2.1,5.1,2.3,5.5c0.2,0.4,0.3,0.8,0.1,1.3c-1.5,2.8-2.9,2.7-2.2,4.1c2.9,4.9,5.8,6.7,10.1,8.9 c0.7,0.4,1.2,0.3,1.6-0.2c0.4-0.5,1.9-2.2,2.4-2.9c0.5-0.7,1-0.6,1.7-0.4c0.6,0.2,4.4,2.1,5.1,2.4c0.7,0.4,1.3,0.5,1.5,0.8 C40.2,32.5,40.2,33.9,39.5,35.7z"/></svg>';
     const telegramMainButton = '<svg id="buttonTelegramBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="telegramIconShape" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M36.9,16.3c-0.1,1-0.7,4.6-1.2,8.4L33.9,36	c0,0-0.1,1.7-1.4,2c-1.2,0.3-3.3-1-3.6-1.3c-0.3-0.2-5.4-3.5-7.3-5.1c-0.5-0.4-1.1-1.3,0.1-2.3c2.6-2.4,5.7-5.3,7.6-7.2	c0.9-0.9,1.7-2.9-1.9-0.4l-10.2,6.9c0,0-1.2,0.7-3.3,0.1C11.7,27.9,9.2,27,9.2,27s-1.8-1.1,1.2-2.2l16.8-6.9c1.7-0.7,7.3-3,7.3-3 S37.1,13.9,36.9,16.3z"/></svg>';
@@ -42,7 +43,6 @@ function kiujdgrsghsss(){
     var entryC = "";//Message
     var entryD = "";//Date
     //Date data
-    var roundingHour = new Date().getHours();
     var dateTeller = new Date();
     //Regex section
     const regexMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -704,6 +704,7 @@ function kiujdgrsghsss(){
         background-color: transparent!important;\
         width: 300px!important;\
         height: 25px!important;\
+        font-weight: 200;\
         font-size: x-small!important;\
         padding-top: 7px!important;\
         cursor: pointer!important;\
@@ -715,7 +716,7 @@ function kiujdgrsghsss(){
         font-size: x-small;\
     }\
     #paragraphBrick a svg {\
-        transform: scale(.6) !important;\
+        transform: translate(-4px, 3px) scale(.65) !important;\
     }\
     #notificationParagraphBrick {\
         display: none;\
@@ -1376,13 +1377,13 @@ function kiujdgrsghsss(){
         -webkit-transition: .3s!important;\
         -moz-transition: .3s!important;\
         -o-transition: .3s!important;\
-        font-size: x-large;\
-        font-weight: 300;\
+        font-size: larger;\
+        font-weight: 400;\
         padding: 10px;\
         z-index: 10000;\
         position: absolute;\
         left: 80px;\
-        top: 10px;\
+        top: 15px;\
     }\
     #stateBrick{\
         color: '+byTheme(charmingGrey,realWhite)+'!important;\
@@ -1426,7 +1427,7 @@ function kiujdgrsghsss(){
         max-width: 200px;\
         max-height: 70px;\
         border-radius: 5px;\
-        font-weight: 100;\
+        font-weight: 300;\
         font-size: small;\
         \
         \
@@ -1510,7 +1511,7 @@ function kiujdgrsghsss(){
         height: 40px;\
         bottom: 15px;\
         right: 20px;\
-        background-color: '+ wspGreen +';\
+        background-color: '+ tellerGreen +';\
         border-radius: 25px;\
         color: white;\
         text-align: center;\
@@ -2063,16 +2064,31 @@ function kiujdgrsghsss(){
             else if(u == null || u == "none" || u == ""){return n}
             else if(n == null || n == "none" || n == ""){return u}
             else{return n}
-        } 
+        }
         //Get or set operatorState (online/offline)
         function operatorState(){
-            oh = h.slice(0, 2);
-            eh = h.slice(3, 5);
-            if((oh < eh && roundingHour >= oh && roundingHour < eh) || (oh > eh && roundingHour < eh && roundingHour < oh) || (oh == eh)){
-                return byLanguage("online","en linea");
+            //Zero Zone
+            var localDate = new Date();
+            var zeroDate = localDate.toUTCString();
+            zeroTime = ((zeroDate.split(" "))[4]).split(":");
+            zeroInSec = (zeroTime[0]*3600)+(zeroTime[1]*60);
+            a = h.slice(0, 5); a1 = a.split(":"); a2 = (a1[0]*3600)+(a1[1]*60); //openhour
+            b = h.slice(6, 11); b1 = b.split(":"); b2 = (b1[0]*3600)+(b1[1]*60); //endhour
+            pol = h.slice(12, 13)//operator (+ or -)
+            c = h.slice(13, 18); c1 = c.split(":"); c2 = (c1[0]*3600)+(c1[1]*60);//gmt zone
+            oh = 0;
+            eh = 0;
+            getOhEh()
+            function getOhEh(){
+                if(pol=="+"){oh = a2-c2; eh = b2-c2}
+                else {oh = a2+c2; eh = b2+c2}
+            }
+
+            if((oh < eh && zeroInSec >= oh && zeroInSec < eh) || (oh > eh && zeroInSec < eh && zeroInSec < oh) || (oh == eh)){
+                return byLanguage("Active","Activo");
             }
             else{
-                return byLanguage("offline","desconectado");
+                return byLanguage("Offline","Desconectado");
             }
         }
         return [operatorName(),operatorState()]
@@ -3003,6 +3019,8 @@ function kiujdgrsghsss(){
             console.log("")
         }, 1000);
     }
+    
+    const day = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"][new Date().getDay()]
 
     */
 
@@ -3013,32 +3031,3 @@ window.onload = function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var tDate = new Date();
-
-  //Convert timestamp in GMT/UTC format
-var utcDate = tDate.toUTCString();
-
-console.log(tDate)
-console.log(utcDate)
-
-const day = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"][new Date().getDay()]
-
-console.log(day)
