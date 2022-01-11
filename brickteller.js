@@ -1,3 +1,8 @@
+/*!
+  * Teller v1.0.0 (https://github.com/dfralan/Teller)
+  * Copyright 2021-2022 The Teller Authors.
+  * Licensed under GNU GENERAL PUBLIC LICENSE (https://github.com/dfralan/Teller/blob/main/LICENSE)
+  */
 function kiujdgrsghsss(){
     //teller element where instructions are made
     const tellerTag = document.getElementsByTagName("teller")[0]
@@ -13,6 +18,7 @@ function kiujdgrsghsss(){
     var messageReady = false;
     var emailReadyTeller = false;
     var lockAndLoudTeller=false;
+    var stateGeneral = false;
     //User input data
     var emotionTeller = "";
     var messageTeller = "";
@@ -24,11 +30,12 @@ function kiujdgrsghsss(){
     const realGrey = '#808080';
     const charmingGrey = '#2A2F32';
     const messengerBlue = '#0384FF';
-    const wspGreen = '#39E05C';    
+    const wspGreen = '#03D79C';
+    const onlineGreen = '#31A24C';
     const tellerGreen = '#03D79C';
     const telegramBlue = '#2AA2C6';
     //Platform Buttons
-    const feedbackMainButton = '<svg id="buttonFeedbackBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="feedbackIconShape" d="M25,0C11.2,0,0,11.2,0,25c0,13.8,11.2,25,25,25s25-11.2,25-25C50,11.2,38.8,0,25,0z M35.8,30 c-4.1,0-7.5-3.3-7.6-7.4c-2-0.5-4.5-0.5-6.4,0c-0.1,4.1-3.4,7.4-7.6,7.4c-4.2,0-7.6-3.4-7.6-7.6c0-4.2,3.4-7.6,7.6-7.6 c3.2,0,5.9,2,7,4.8c2.4-0.6,5.1-0.6,7.5,0c1.1-2.8,3.8-4.8,7-4.8c4.2,0,7.6,3.4,7.6,7.6C43.3,26.6,39.9,30,35.8,30z"/></svg>'
+    const feedbackMainButton = '<svg id="buttonFeedbackBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="feedbackIconShape" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M25,39.5c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5h0c1.4,0,2.5,1.1,2.5,2.5S26.4,39.5,25,39.5z M27.5,26.4v3.8c0,1.4-1.1,2.5-2.5,2.5s-2.5-1.1-2.5-2.5v-5c0-1.7,1.3-3.2,3-3.5c2.1-0.3,3.7-2.2,3.6-4.4c-0.1-2.1-1.8-3.8-3.9-3.9c-1.2-0.1-2.3,0.3-3.1,1.1c-0.8,0.8-1.3,1.9-1.3,3c0,0.8,0.2,1.6,0.6,2.2c0.7,1.1,0.4,2.7-0.8,3.4c-1.1,0.7-2.7,0.4-3.4-0.8c-0.9-1.5-1.4-3.1-1.4-4.9c0-2.5,1-4.9,2.9-6.6c1.8-1.7,4.3-2.6,6.8-2.4c4.6,0.3,8.2,3.9,8.5,8.5C34.3,21.4,31.5,25.2,27.5,26.4z"/></svg>'
     const messengerMainButton = '<svg id="buttonMessengerBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" y="0" width="50" height="50"/><path id="messengerIconShape" d="M25,0C11.5,0,0.5,11.1,0.7,24.5c0.1,6.8,3,12.9,7.5,17.3c0.5,0.5,0.8,1.2,0.8,1.9v4.1c0,1.5,1.6,2.6,3.1,1.9 l4.5-2c0.6-0.3,1.2-0.3,1.8-0.1c2,0.6,4.3,0.9,6.5,0.9c13.3,0,24.3-10.9,24.3-24.2C49.2,10.9,38.3,0,25,0z M40,18.5l-7.2,11.4	c-1.2,1.8-3.7,2.3-5.5,1.1l-2-1.4l-3.6-2.5c-0.7-0.5-1.6-0.4-2.2,0.1l-7.2,5.9c-1.2,0.9-2.7-0.5-1.9-1.7L17.5,20c1.2-1.8,3.7-2.3,5.5-1.1l3,2.1l2.6,1.9c0.7,0.5,1.6,0.4,2.2-0.1l7.2-5.9C39.2,15.9,40.8,17.3,40,18.5z"/></svg>';
     const wspMainButton = '<svg id="buttonWhatsappBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="whatsappIconShape" d="M42.5,7.4c-4.7-4.6-10.9-7.2-17.6-7.2C11.2,0.2,0,11.3,0,25.1c0,4.7,1.4,9.3,3.8,13.2l0.6,0.9l-2.5,9.2l9.4-2.5	l0.9,0.5c3.8,2.3,8.2,3.5,12.7,3.5C38.6,49.8,50,38.7,50,24.9C50,18.3,47.2,12.1,42.5,7.4z M39.5,35.7c-0.6,1.8-3.6,3.3-5,3.6	c-2.4,0.3-4.2,0.2-9-1.9C18,34.2,13.1,26.6,12.8,26.1c-0.3-0.5-3-4.1-3-7.7s1.9-5.4,2.6-6.3c0.6-0.7,1.5-0.9,2-0.9s1,0,1.5,0 c0.4,0,1-0.2,1.7,1.3c0.6,1.5,2.1,5.1,2.3,5.5c0.2,0.4,0.3,0.8,0.1,1.3c-1.5,2.8-2.9,2.7-2.2,4.1c2.9,4.9,5.8,6.7,10.1,8.9 c0.7,0.4,1.2,0.3,1.6-0.2c0.4-0.5,1.9-2.2,2.4-2.9c0.5-0.7,1-0.6,1.7-0.4c0.6,0.2,4.4,2.1,5.1,2.4c0.7,0.4,1.3,0.5,1.5,0.8 C40.2,32.5,40.2,33.9,39.5,35.7z"/></svg>';
     const telegramMainButton = '<svg id="buttonTelegramBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="telegramIconShape" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M36.9,16.3c-0.1,1-0.7,4.6-1.2,8.4L33.9,36	c0,0-0.1,1.7-1.4,2c-1.2,0.3-3.3-1-3.6-1.3c-0.3-0.2-5.4-3.5-7.3-5.1c-0.5-0.4-1.1-1.3,0.1-2.3c2.6-2.4,5.7-5.3,7.6-7.2	c0.9-0.9,1.7-2.9-1.9-0.4l-10.2,6.9c0,0-1.2,0.7-3.3,0.1C11.7,27.9,9.2,27,9.2,27s-1.8-1.1,1.2-2.2l16.8-6.9c1.7-0.7,7.3-3,7.3-3 S37.1,13.9,36.9,16.3z"/></svg>';
@@ -64,15 +71,11 @@ function kiujdgrsghsss(){
     detectUserLang();
     detectBrowser();
     complementsComposer()
-    callToActionTeller()
 
     //Styles sheet/Hoja de estilos
     const styleSheetTeller = '<style>\
     @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600&display=swap");\
     '+ fixScaleOnIE()+'\
-    \
-    \
-    \
     teller {\
         display:'+ complementsComposer()[2]+';\
         position: fixed!important;\
@@ -97,7 +100,7 @@ function kiujdgrsghsss(){
         filter: drop-shadow(0 0 0.25rem rgba(0,0,0,0.1));\
         border: 1px solid rgba(0,0,0,0.1);\
         border-radius: 5px;\
-        width: 190px!important;\
+        min-width: 190px;\
         height: auto!important;\
         padding: 10px 70px 15px 15px;\
         text-align: left;\
@@ -130,7 +133,7 @@ function kiujdgrsghsss(){
         -moz-transition: .3s!important;\
         -o-transition: .3s!important;\
         position: absolute!important;\
-        background-color: '+ userColor() +'!important;\
+        background-color: '+ byTheme(realWhite, charmingGrey) +'!important;\
         width: 50px;\
         height: 50px;\
         '+ getSide()[0] +': 0px;\
@@ -205,7 +208,7 @@ function kiujdgrsghsss(){
         -webkit-transition: .3s!important;\
         -moz-transition: .3s!important;\
         -o-transition: .3s!important;    \
-        fill:'+  byTheme(realWhite,charmingGrey) +';\
+        fill: '+ userColor() +'!important;\
         transform: translateX(30px) scaleX(0);\
     }\
     #palomita {\
@@ -214,7 +217,7 @@ function kiujdgrsghsss(){
         -webkit-transition: .3s!important;\
         -moz-transition: .3s!important;\
         -o-transition: .3s!important;    \
-        fill:'+  byTheme(realWhite,charmingGrey) +';\
+        fill: '+ userColor() +'!important;\
         transform: scaleX(1);\
     }\
     .questBrick {\
@@ -1371,6 +1374,21 @@ function kiujdgrsghsss(){
         background-repeat: no-repeat;\
         background-size: 100% 100%;\
     }\
+    #stateLight{\
+        background-color: '+nebulaGrey+';\
+        transition: .3s!important;\
+        -webkit-transition: .3s!important;\
+        -moz-transition: .3s!important;\
+        -o-transition: .3s!important;\
+        z-index: 10000;\
+        position: absolute;\
+        border-radius: 5px;\
+        outline: 3px solid '+byTheme(realWhite,charmingGrey)+'!important;\
+        width: 10px;\
+        height: 10px;\
+        left: 45px;\
+        top: 45px;\
+    }\
     #operatorBrick{\
         color: '+byTheme(charmingGrey,realWhite)+'!important;\
         transition: .3s!important;\
@@ -1429,14 +1447,6 @@ function kiujdgrsghsss(){
         border-radius: 5px;\
         font-weight: 300;\
         font-size: small;\
-        \
-        \
-        \
-        \
-        \
-        \
-        \
-        \
     }\
     #buttonWhatsappBrick {\
         opacity: 1;\
@@ -1709,7 +1719,8 @@ function kiujdgrsghsss(){
     const asdwertd = ("dbcadceaeea4b522e42b160db3953980"||"d868333ef2514f9979eeefd5713d608d"||"5cf8cb462a3bbacb27968ac14872f094"||"ecaf77a718f3083fa585534aa356126f"||"4c03fdb2a2b92a0ff5b3e56cc636bd37"||"995939e3386cb19d29bf58b1728d7b29"||"d73178e5bcaf544c9cccf98cabbe14b3"||"ddbf6edd990ded708965bae067c8b8b7"||"c594323783ddbac8e206f89fa004e6c4"||"b8dbe52060359d80b37174af8556ec23");
     //Teller full element
     var tellerBrick = '\
-    <brick id="hoverBrick">' + userCallToActionMessage() + '\
+    <brick id="hoverBrick">\
+        <brick id="hoverBrickP"></brick>\
         <brick id="hoverBrickClose"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"height="20px" viewBox="0 0 20 20" style="overflow:visible;enable-background:new 0 0 20 20;" xml:space="preserve"><style type="text/css">.backgroundXCloseAlert{fill:none;}.xCloseAlert{fill:'+  byTheme(realWhite,charmingGrey) +';}</style><circle class="backgroundXCloseAlert" cx="10" cy="10" r="10"/><path class="xCloseAlert" d="M11.6,9.9L14,7.4c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0l-2.4,2.4L7.7,6c-0.4-0.4-1-0.4-1.4,0	c-0.4,0.4-0.4,1,0,1.4l2.4,2.4l-2.4,2.4c-0.4,0.4-0.4,1,0,1.4C6.5,13.9,6.7,14,7,14c0.3,0,0.5-0.1,0.7-0.3l2.4-2.4l2.4,2.4	c0.2,0.2,0.5,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L11.6,9.9z"/></svg></brick>\
     </brick> \
     \
@@ -1764,7 +1775,7 @@ function kiujdgrsghsss(){
         </brick>\
     \
         <brick id="sharedComponentsArea">\
-            <brick id="imagenPerfilOperator" src="none" alt="teller Operator"></brick>\
+            <brick id="imagenPerfilOperator" src="none" alt="teller Operator"><brick id="stateLight"></brick></brick>\
             <brick id="operatorBrick">'+ operatorData()[0] +'</brick>\
             <brick id="stateBrick">'+ operatorData()[1] +'</brick>\
             <brick id="platformBoxBrick"><brick id="bubbleWelcome">...</brick></brick>\
@@ -1806,13 +1817,6 @@ function kiujdgrsghsss(){
         else if(/[en|EN]/.test(a)){clientLang = "en";}
     }
 
-    //Selector by language for clients
-    function byClientLanguage(en,es,pt){  
-        if (clientLang == 'en') {return en;}
-        else if (clientLang == 'es'){return es;}
-        else if (clientLang == 'pt'){return pt;}
-    }
-
     //Detect user language
     function detectUserLang(){
         var a = navigator.language || navigator.userLanguage || navigator.browserLanguage;
@@ -1827,6 +1831,13 @@ function kiujdgrsghsss(){
         else if (userLang == 'es'){return es;}
     }
 
+    //Selector by language for clients
+    function byClientLanguage(en,es,pt){  
+        if (clientLang == 'en') {return en;}
+        else if (clientLang == 'es'){return es;}
+        else if (clientLang == 'pt'){return pt;}
+    }
+
     function fixScaleOnIE(){
         if (detectBrowser() == "ie") {return ""}
         else {return "@media only screen and (max-width: 1000px) {teller {transform: scale(2)}}"}
@@ -1839,14 +1850,6 @@ function kiujdgrsghsss(){
         return byTheme(charmingGrey,realWhite);
         else{return a}
     }
-
-    //Get call to action message by user
-    function userCallToActionMessage(){
-        a = tellerTag.getAttribute("callToActionMessage")
-        if (a == null || a == "none" || a == ""){return byLanguage("Share your user experience with us or send us a message.","Comparte tu experiencia con nosotros o envíanos un mensaje.")}
-        else{return a}
-    }
-
 
     //Get border-radius of bubble selected by user    
     function userBorderRadius(){
@@ -1928,21 +1931,7 @@ function kiujdgrsghsss(){
         else if (a == "never"){return a}
         else{return Math.round(parseInt(a))*1000}
     }
-
-
-    function callToActionTeller(){
-        if (appearAfter() == "never"){return}
-        else{
-            setTimeout(function(){
-                x = interacted;
-                if(!x){
-                    hoverBrick.style.display="block";
-                    setTimeout(function(){ hoverBrick.style.opacity = "1";  },1);
-                }
-            },appearAfter());
-        }
-    }
-
+    
     //Get theme selected by user
     function userTheme(){
         a = tellerTag.getAttribute("theme")
@@ -2057,7 +2046,7 @@ function kiujdgrsghsss(){
         //User attributes
         u = tellerTag.getAttribute("username")
         n = tellerTag.getAttribute("operatorName")    
-        h = tellerTag.getAttribute("operatorHour")
+        h = tellerTag.getAttribute("supportHours")
         //Get or set operatorName
         function operatorName(){
             if(n == null || n == "none" || n == "" && u == null || u == "none" || u == ""){return byLanguage("Bot John","Bot Juancho");}
@@ -2085,9 +2074,11 @@ function kiujdgrsghsss(){
             }
 
             if((oh < eh && zeroInSec >= oh && zeroInSec < eh) || (oh > eh && zeroInSec < eh && zeroInSec < oh) || (oh == eh)){
+                stateGeneral = true;
                 return byLanguage("Active","Activo");
             }
             else{
+                stateGeneral = false;
                 return byLanguage("Offline","Desconectado");
             }
         }
@@ -2125,6 +2116,7 @@ function kiujdgrsghsss(){
         const buttonTelegramBrick = document.getElementById("buttonTelegramBrick");
         const buttonWhatsappBrick = document.getElementById("buttonWhatsappBrick");
         const buttonFeedbackBrick = document.getElementById("buttonFeedbackBrick");
+        const stateLight = document.getElementById("stateLight");
 
         //feedback components
         var currentHeightforFeedback = 200;
@@ -2204,6 +2196,49 @@ function kiujdgrsghsss(){
                 setTimeout(function(){ smm(paragraphBrick);  }, 600);
             }
         }
+        
+        //turnLight
+        turnLight()
+        function turnLight(){
+            if (stateGeneral){stateLight.style.backgroundColor=onlineGreen}
+            else stateLight.style.backgroundColor=nebulaGrey;
+        }
+
+        //Get call to action message by user
+        function userCallToActionMessage(){
+            a = tellerTag.getAttribute("callToAction")
+            if (a == null || a == "none" || a == ""){
+                if(stateGeneral){
+                    notificationAppear(hoverBrickP, byLanguage("We are online. ","Estamos en línea. ")+byLanguage("Share your user experience with us or send us a message.","Comparte tu experiencia con nosotros o envíanos un mensaje."))
+                }
+                else{
+                    notificationAppear(hoverBrickP, byLanguage("Share your user experience with us or send us a message.","Comparte tu experiencia con nosotros o envíanos un mensaje."))
+                }
+            }
+            else{
+                if(stateGeneral){
+                    notificationAppear(hoverBrickP, byLanguage("We are online. ","Estamos en línea. ") + a)
+                }
+                else{
+                    notificationAppear(hoverBrickP, a)
+                }
+            }
+        }
+
+        callToActionTeller()
+        function callToActionTeller(){
+            if (appearAfter() == "never"){return}
+            else{
+                setTimeout(function(){
+                    x = interacted;
+                    if(!x){                    
+                        userCallToActionMessage()
+                        hoverBrick.style.display="block";
+                        setTimeout(function(){ hoverBrick.style.opacity = "1";  },1);
+                    }
+                },appearAfter());
+            }
+        }
 
         //Create link for messenger and redirect
         function toMessenger(){
@@ -2243,7 +2278,7 @@ function kiujdgrsghsss(){
             else if (getTelegramMsg() == ""){
                 window.open( 'https://t.me/'+ a, "_blank")
             }
-            else{window.open( 'https://wa.me/'+ a +'?text=' + getWspMsg(), "_blank")};
+            else{window.open( 'https://t.me/share/url?url='+ a +'&text=' + getTelegramMsg(), "_blank")};
         }
     
         function notificationAppear(l,c){
